@@ -12,19 +12,37 @@ const areaValue = document.getElementById("area").value
 const vibeValue = document.getElementById("vibe").value
 const budgetValue = document.getElementById("budget").value
 
-function generateNightOut(){
-    
+function generateNightOut() {
+
   const areaValue = document.getElementById("area").value
   const vibeValue = document.getElementById("vibe").value
   const budgetValue = document.getElementById("budget").value
- const results = places.filter(function(place){
-    return place.area === areaValue && place.vibe === vibeValue && place.budget === budgetValue
+
+  const results = places.filter(function(place){
+    return (
+      place.area === areaValue &&
+      place.vibe === vibeValue &&
+      place.budget === budgetValue
+    )
   })
-  console.log(results)
+
+  const resultsDiv = document.getElementById("results")
+
+  if (results.length === 0) {
+    resultsDiv.innerHTML = "No places found 😢"
+    return
+  }
+
+  resultsDiv.innerHTML = ""
+
+  results.forEach(function(place){
+    resultsDiv.innerHTML += `
+      <div>
+        <h3>${place.name}</h3>
+        <p>${place.area}</p>
+        <p>${place.vibe}</p>
+        <p>${place.budget}</p>
+      </div>
+    `
+  })
 }
-
-const generateBtn = document.getElementById("generateBtn")
-generateBtn.addEventListener("click", generateNightOut)
-
-const resultsDiv = document.getElementById("results")
-resultsDiv.innerHTML = "Your night out is at: " + results[0].name
