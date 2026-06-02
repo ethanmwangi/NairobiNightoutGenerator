@@ -12,7 +12,8 @@ const areaValue = document.getElementById("area").value
 const vibeValue = document.getElementById("vibe").value
 const budgetValue = document.getElementById("budget").value
 
-function generateNightOut() {
+function generateNightOut(){
+    
   const areaValue = document.getElementById("area").value
   const vibeValue = document.getElementById("vibe").value
   const budgetValue = document.getElementById("budget").value
@@ -20,7 +21,7 @@ function generateNightOut() {
     return place.area === areaValue && place.vibe === vibeValue && place.budget === budgetValue
   })
   console.log(results)
- 
+}
 
 const generateBtn = document.getElementById("generateBtn")
 generateBtn.addEventListener("click", generateNightOut)
