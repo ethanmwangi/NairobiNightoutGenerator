@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nairobi Night Out Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Nairobi Night Out Generator 🌃</h1>
+    <p class="subtitle">Answer 3 questions. We sort out the rest.</p>
+
+    <div class="filters">
+
+      <div class="filter-group">
+        <label for="area">Area</label>
+        <select id="area">
+          <option value="">Pick an area</option>
+          <option value="Westlands">Westlands</option>
+          <option value="Lavington">Lavington</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="vibe">Vibe</label>
+        <select id="vibe">
+          <option value="">Pick a vibe</option>
+          <option value="chill">Chill</option>
+          <option value="turn up">Turn Up</option>
+          <option value="date night">Date Night</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="budget">Budget</label>
+        <select id="budget">
+          <option value="">Pick a budget</option>
+          <option value="low">Low (1,500 - 2,000)</option>
+          <option value="mid">Mid (2,000 - 3,000)</option>
+          <option value="high">High (5,000+)</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button id="generateBtn">Generate My Night Out </button>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
