@@ -25,3 +25,6 @@ function generateNightOut(){
 
 const generateBtn = document.getElementById("generateBtn")
 generateBtn.addEventListener("click", generateNightOut)
+
+const resultsDiv = document.getElementById("results")
+resultsDiv.innerHTML = "Your night out is at: " + results[0].name
