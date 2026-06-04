@@ -1,4 +1,4 @@
-# Nairobi Night Out Generator 🌃
+# Nairobi Night Out Generator 
 
 A vanilla JavaScript app that generates a personalised Nairobi night out plan based on your area, vibe, and budget.
 
