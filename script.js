@@ -37,7 +37,7 @@ function generateNightOut() {
 
   results.forEach(function(place){
     resultsDiv.innerHTML += `
-      <div>
+      <div class="results-card">
         <h3>${place.name}</h3>
         <p>${place.area}</p>
         <p>${place.vibe}</p>
