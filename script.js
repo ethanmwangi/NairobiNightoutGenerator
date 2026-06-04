@@ -29,7 +29,7 @@ function generateNightOut() {
   const resultsDiv = document.getElementById("results")
 
   if (results.length === 0) {
-    resultsDiv.innerHTML = "No places found 😢"
+    resultsDiv.innerHTML = "No places found "
     return
   }
 
