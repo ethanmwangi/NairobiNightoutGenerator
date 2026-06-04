@@ -24,6 +24,7 @@ function generateNightOut() {
       place.vibe === vibeValue &&
       place.budget === budgetValue
     )
+    console.log("button clicked")
   })
 
   const resultsDiv = document.getElementById("results")
@@ -46,3 +47,6 @@ function generateNightOut() {
     `
   })
 }
+
+const generateBtn = document.getElementById("generateBtn")
+generateBtn.addEventListener("click", generateNightOut)
