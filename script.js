@@ -50,3 +50,5 @@ function generateNightOut() {
 
 const generateBtn = document.getElementById("generateBtn")
 generateBtn.addEventListener("click", generateNightOut)
+
+// The event listener is the bridge between the user's action and your code. Without it the button is just a button — it doesn't know what to do when clicked
